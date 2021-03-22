@@ -1,4 +1,4 @@
-# mask_detector
+# Face & mask detection
 
 ## Описание
 
@@ -50,14 +50,14 @@ https://github.com/gopinath-balu/computer_vision/blob/master/CAFFE_DNN/deploy.pr
 ![Image alt](https://github.com/artchere/mask_detector/blob/main/report.png)
 
 ## Запуск
-#### Требуются imutils, tensorflow/keras 2.4.1, OpenCV
+__Требуются imutils, tensorflow/keras 2.4.1, OpenCV__
 
-1. Можно сразу запустить скрипт 3_detect_mask_video.py, который использует уже обученный классификатор масок mask_detector.model (полученный скриптом 1_mask_detector_training.py) и посмотреть на работу детектора;
-2. Можно пройти заново по всем скриптам, то есть с помощью 1_mask_detector_training.py обучить классификатор масок на датасете и сохранить его как mask_detector.model,
-затем 2_face_mask_detector.py - здесь можно запустить проверку детектора на изображении, и уже с помощью 3_detect_mask_video.py подключиться к веб-камере своего ПК и проверить работу в realtime.
+1. Можно сразу запустить скрипт _3_detect_mask_video.py_, который использует уже обученный классификатор масок _mask_detector.model_ (полученный скриптом _1_mask_detector_training.py_) и посмотреть на работу детектора;
+2. Можно пройти заново по всем скриптам, то есть с помощью _1_mask_detector_training.py_ обучить классификатор масок на датасете и сохранить его как _mask_detector.model_,
+затем _2_face_mask_detector.py_ - здесь можно запустить проверку детектора на изображении, и уже с помощью _3_detect_mask_video.py_ подключиться к веб-камере своего ПК и проверить работу в realtime.
 
-Так как в скриптах есть парсер аргументов, то можно работать с командной строкой, например:
-- Открыть anaconda prompt, перейти в папку с проектом с помощью команды cd C:\Users\xxxx\mask_detector
-- Передать команду python 1_mask_detector_training.py --dataset dataset (запустится первый скрипт)
-- Затем можно запустить второй скрипт командой python 2_face_mask_detector.py --image examples/0.png (проверка на изображении)
-- Далее - третий скрипт командой python 3_detect_mask_video.py
+Так как в скриптах есть парсер аргументов, то можно работать с командной строкой:
+- Открыть anaconda prompt, перейти в папку с проектом, например, с помощью команды __cd C:\Users\xxxx\mask_detector__
+- Передать команду __python 1_mask_detector_training.py --dataset dataset__ (запустится первый скрипт)
+- Затем можно запустить второй скрипт командой __python 2_face_mask_detector.py --image examples/0.png__ (проверка на изображении)
+- Далее - третий скрипт командой __python 3_detect_mask_video.py__
