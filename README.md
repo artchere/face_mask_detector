@@ -46,9 +46,8 @@ https://github.com/gopinath-balu/computer_vision/blob/master/CAFFE_DNN/deploy.pr
 
 ![Image alt](https://github.com/artchere/mask_detector/blob/main/report.png)
 
-Требуются imutils, tensorflow/keras 2.4.1, OpenCV
-
 ## Запуск
+#### Требуются imutils, tensorflow/keras 2.4.1, OpenCV
 
 1. Можно сразу запустить скрипт 3_detect_mask_video.py, который использует уже обученный классификатор масок mask_detector.model (полученный скриптом 1_mask_detector_training.py) и посмотреть на работу детектора;
 2. Можно пройти заново по всем скриптам, то есть с помощью 1_mask_detector_training.py обучить классификатор масок на датасете и сохранить его как mask_detector.model,
