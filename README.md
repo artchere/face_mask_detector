@@ -54,10 +54,8 @@ https://github.com/gopinath-balu/computer_vision/blob/master/CAFFE_DNN/deploy.pr
 2. Можно пройти заново по всем скриптам, то есть с помощью 1_mask_detector_training.py обучить классификатор масок на датасете и сохранить его как mask_detector.model,
 затем 2_face_mask_detector.py - здесь можно запустить проверку детектора на изображении, и уже с помощью 3_detect_mask_video.py подключиться к веб-камере своего ПК и проверить работу в realtime.
 
-Так как в скриптах есть парсер аргументов, то можно запускать из командной строки.
-
-Например, открыть anaconda prompt, перейти в папку с проектом с помощью команды cd C:\Users\xxxx\mask_detector,
-затем передать команду python 1_mask_detector_training.py --dataset dataset (запустится первый скрипт),
-затем можно запустить второй скрипт командой python 2_face_mask_detector.py --image examples/0.png (проверка на изображении),
-далее - третий скрипт командой python 3_detect_mask_video.py
-
+Так как в скриптах есть парсер аргументов, то можно работать с командной строкой, например:
+- Открыть anaconda prompt, перейти в папку с проектом с помощью команды cd C:\Users\xxxx\mask_detector
+- Передать команду python 1_mask_detector_training.py --dataset dataset (запустится первый скрипт)
+- Затем можно запустить второй скрипт командой python 2_face_mask_detector.py --image examples/0.png (проверка на изображении)
+- Далее - третий скрипт командой python 3_detect_mask_video.py
