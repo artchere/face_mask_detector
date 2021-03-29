@@ -1,5 +1,8 @@
 # Face & mask detection
 
+![Image alt](https://github.com/artchere/mask_detector/blob/main/test_animation.gif)
+
+
 ## Описание
 
 __Данный проект я подсмотрел на этом ресурсе:__
